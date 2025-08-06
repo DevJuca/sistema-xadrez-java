@@ -45,7 +45,7 @@ public class Board {
     }
 
     private boolean positionExists(int linhas, int colunas){
-        return linhas >= 0 && linhas < linhas && colunas >=0 && colunas < colunas;
+        return linhas >= 0 && linhas < this.linhas && colunas >=0 && colunas < this.colunas;
     }
 
     public boolean positionExists(Position posicao){
