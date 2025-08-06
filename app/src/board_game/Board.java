@@ -34,4 +34,9 @@ public class Board {
     public Piece pecas(Position posicao){
         return pecas[posicao.getLinhas()][posicao.getColunas()];
     }
+
+    public void placePiece(Piece peca, Position posicao){
+        pecas[posicao.getLinhas()][posicao.getColunas()] = peca;
+        peca.posição = posicao;
+    }
 }
